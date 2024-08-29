@@ -1,0 +1,13 @@
+<div class="dashboard-layout h-100 position-relative">
+  <app-header [selectedItem]="selectedItem"></app-header>
+  <div class="main-content">
+    <app-side-navbar
+      [navigationItems]="navigationItems"
+      [selectedItem]="selectedItem"
+      (itemSelected)="onItemSelected($event)"
+    ></app-side-navbar>
+    <main class="page-content">
+      <router-outlet></router-outlet>
+    </main>
+  </div>
+</div>

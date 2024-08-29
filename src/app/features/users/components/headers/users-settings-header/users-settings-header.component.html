@@ -1,0 +1,12 @@
+<div class="settings-header">
+    <button class="settings-user-add-btn" mat-button (click)="openAddUserDialog()">
+      <mat-icon>add</mat-icon> اضافة
+    </button>
+    <input
+      type="text"
+      placeholder="ابحث عن الاسم"
+      class="settings-users-search"
+      [(ngModel)]="searchText"
+      (input)="searchChange()"
+    />
+  </div>

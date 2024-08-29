@@ -1,0 +1,15 @@
+.header {
+  .header-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #606060;
+    .header-info-item {
+      margin: 0;
+      padding: 5px 0;
+      color: white;
+      font-size: 1rem;
+    }
+  }
+}

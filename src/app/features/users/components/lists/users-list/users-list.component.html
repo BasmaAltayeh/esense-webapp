@@ -1,0 +1,13 @@
+<ul class="user-list">
+  <li *ngFor="let user of filteredUsers" class="user-item">
+    {{ user.name }}
+    <div class="action-wrapper">
+      <button class="user-edit-btn" (click)="openEditUserDialog(user)">
+        <mat-icon>edit</mat-icon> تعديل
+      </button>
+      <button class="user-delete-btn" (click)="deleteUser(user.id)">
+        <mat-icon>delete</mat-icon> حذف
+      </button>
+    </div>
+  </li>
+</ul>

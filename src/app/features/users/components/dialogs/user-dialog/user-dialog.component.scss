@@ -1,0 +1,63 @@
+.user-dialog {
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background-color: #fff;
+  direction: rtl;
+
+  .user-dialog-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+
+  .user-dialog-content {
+    margin-bottom: 20px;
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: 600;
+    }
+
+    .custom-input {
+      width: 95%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 16px;
+      outline: none;
+      transition: border-color 0.3s;
+      margin-bottom: 10px;
+      &:focus {
+        border-color: #007bff;
+      }
+    }
+  }
+
+  .user-dialog-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+
+    .custom-button {
+      width: 48%;
+      padding: 10px;
+      font-size: 16px;
+      color: #fff;
+      background-color: #007bff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+
+      &:disabled {
+        background-color: #999;
+        cursor: not-allowed;
+      }
+
+      &:hover:not(:disabled) {
+        background-color: #0056b3;
+      }
+    }
+  }
+}

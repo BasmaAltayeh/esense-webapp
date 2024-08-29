@@ -1,0 +1,15 @@
+<nav class="side-navbar">
+  <ul class="side-navbar-list">
+    <li
+      *ngFor="let item of navigationItems"
+      class="menu-item"
+      [routerLink]="item.link"
+      tabindex="0"
+      (click)="selectItem(item)"
+      (keydown)="handleKeydown($event, item)"
+      [ngClass]="{ 'side-navbar-selected': item === selectedItem }"
+    >
+      {{ item.label }}
+    </li>
+  </ul>
+</nav>

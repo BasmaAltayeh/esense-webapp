@@ -1,0 +1,16 @@
+<nav class="header-top-navbar">
+  <ul class="header-top-navbar-list">
+    <li
+      class="sub-item"
+      *ngFor="let subItem of selectedItem.subItems"
+      tabindex="0"
+      (click)="selectSubItem(subItem)"
+      (keydown)="handleSubItemKeydown($event, subItem)"
+      [ngClass]="{
+        'sub-navbar-selected': subItem.link === currentSubItemLink
+      }"
+    >
+      <a [routerLink]="subItem.link">{{ subItem.label }}</a>
+    </li>
+  </ul>
+</nav>
